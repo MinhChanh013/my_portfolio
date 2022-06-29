@@ -1,0 +1,31 @@
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.App-container {
+  position: relative;
+  width: 100%;
+}
+
+.App-home {
+  padding: 0 100px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.App-home::before {
+  content: "";
+  position: absolute;
+  height: 1013px;
+  width: 1013px;
+  left: -336px;
+  top: -305px;
+  border-radius: 50%;
+  background: #002853;
+  filter: blur(564px);
+}
+

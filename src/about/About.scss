@@ -1,0 +1,212 @@
+.about {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  height: 613px;
+  width: 613px;
+  left: 6px;
+  top: 5px;
+  border-radius: 50%;
+  background: #002853;
+  filter: blur(564px);
+}
+
+.about-container {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-img p,
+.about-img h3,
+.about-img h4 {
+  color: #81afdd;
+}
+.about-img h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.about-img p {
+  font-size: 20px;
+}
+
+.about-img h3 {
+  font-size: 28px;
+}
+
+.about-img h4 {
+  font-size: 22px;
+}
+
+.about-img-cotainer {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-skill {
+  width: 120px;
+  height: calc(0% - 100px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: height 0.3s ease;
+}
+
+.img-skill.active {
+  height: calc(100% - 100px);
+}
+
+.img-skill:nth-child(1) {
+  animation: animationSkill1 3s infinite linear;
+}
+.img-skill:nth-child(2) {
+  animation: animationSkill2 3s infinite linear;
+}
+.img-skill:nth-child(3) {
+  animation: animationSkill3 3s infinite linear;
+}
+.img-skill:nth-child(4) {
+  animation: animationSkill4 3s infinite linear;
+}
+.img-skill:nth-child(5) {
+  animation: animationSkill5 3s infinite linear;
+}
+.img-skill:nth-child(6) {
+  animation: animationSkill6 3s infinite linear;
+}
+
+@keyframes animationSkill1 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes animationSkill2 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(60deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(420deg);
+  }
+}
+@keyframes animationSkill3 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(120deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(480deg);
+  }
+}
+@keyframes animationSkill4 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(540deg);
+  }
+}
+@keyframes animationSkill5 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(240deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(600deg);
+  }
+}
+@keyframes animationSkill6 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(300deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(660deg);
+  }
+}
+
+.img-skill img {
+  width: 100px;
+  height: 100px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transform: translateX(0px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.about-content {
+  color: #81afdd;
+  z-index: 9;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-content-button {
+  margin-top: 30px;
+}
+
+.about-content-button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 0px;
+  background-color: rgba(232, 232, 232, 0.174);
+  clip-path: circle(50% at 0 50%);
+  transition: all .3s ease;
+}
+
+.about-content-button button {
+  position: relative;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff4820;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.about-content-button button:hover::before{
+  width: 150px;
+  clip-path: circle(100%);
+}
