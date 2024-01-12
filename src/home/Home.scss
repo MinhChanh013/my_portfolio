@@ -61,7 +61,7 @@
   border-bottom-left-radius: 4px;
 }
 
-.home-input button {
+.home-input a {
   position: relative;
   padding: 0 30px;
   cursor: pointer;
@@ -72,6 +72,9 @@
   white-space: nowrap;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-input button::before {
@@ -107,3 +110,44 @@
     transform: translateY(20px);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .home-container{
+    grid-template-columns: 1fr;
+  }
+  .home-content{
+    margin-top: 50px;
+  }
+  .home-content h4{
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .home-content p{
+    font-size: 15px;
+  }
+  .home-input{
+    height: 50px;
+    width: 70%;
+  }
+  .home-input input,
+  .home-input button{
+    font-size: 15px;
+  }
+  .home-face img{
+    width: 90%;
+  }
+  .home-face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home-input{
+    width: 100%;
+  }
+
+}
+

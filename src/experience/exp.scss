@@ -44,6 +44,7 @@
   position: relative;
   margin-bottom: 20px;
   margin-left: 40px;
+  white-space: nowrap;
 }
 
 .exp-header li::before {
@@ -78,12 +79,19 @@
   height: 315px;
 }
 
-.skill h4,
-.education h4 {
+.exp-main-slide .skill h4,
+.exp-main-slide .education h4 {
   color: var(--color-nav);
   font-size: 18px;
   font-weight: 800;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg{
+    font-size: 20px;
+  }
 }
 
 .exp-main {
@@ -108,7 +116,7 @@
   cursor: pointer;
 }
 
-.project h4::before,
+.exp-main-slide .project h4::before,
 .skill h4::before,
 .education h4::before {
   content: "";
@@ -186,16 +194,16 @@
   max-height: 300px;
 }
 
-.project {
+.exp-main-slide .project {
   position: relative;
 }
 
-.project h3 {
+.exp-main-slide .project h3 {
   color: var(--color-nav);
   font-weight: 800;
 }
 
-.project h4 {
+.exp-main-slide .project h4 {
   margin-top: 20px;
   color: var(--color-nav);
   font-weight: 800;
@@ -210,7 +218,7 @@
   cursor: pointer;
 }
 
-.exp-more-skill{
+.exp-more-skill {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -218,35 +226,121 @@
   flex-direction: column;
 }
 
-.exp-more-skill h2{
+.exp-more-skill h2 {
   background: var(--gradient-text);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.exp-more-skill h3{
+.exp-more-skill h3 {
   color: var(--color-text);
   font-size: 18px;
   font-weight: 400;
 }
 
-.skill-img{
+.skill-img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  height: 90px;
+  justify-content: center;
 }
 
-.skill-img img{
+.skill-img img {
   cursor: pointer;
   width: 80px;
   height: 80px;
   object-fit: cover;
   margin-left: 10px;
   margin-right: 10px;
-  transition: all .05s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
-.skill-img img:hover{
+.skill-img img:hover {
   width: 90px;
   height: 90px;
+}
+
+.exp > .exp-content {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .exp-content {
+    display: none;
+  }
+  .exp-container {
+    grid-template-columns: 0.6fr 1fr;
+  }
+
+  .exp > .exp-content {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+  .skill-img img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-img img:hover {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .exp-header li {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+  .exp-main-slide .skill h4,
+  .exp-main-slide .education h4 {
+    font-size: 15px;
+  }
+  .exp-container {
+    grid-template-columns: 0.4fr 1fr;
+  }
+  .education span {
+    font-size: 13px;
+  }
+  .education-time {
+    display: block;
+  }
+  .education-time p {
+    width: 30%;
+    margin-bottom: 5px;
+  }
+  .skill span {
+    width: 80%;
+  }
+  .exp-main-slide .project h3 {
+    font-size: 16px;
+  }
+  .exp-main-slide .project h4 {
+    font-size: 14px;
+  }
+  .skill-img img {
+    margin-top: 10px;
+  }
+  .exp-container {
+    grid-template-columns: 1fr;
+  }
+  .exp-header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .exp-container {
+    height: 400px;
+  }
+  .exp-hiddent {
+    height: 315px;
+    overflow: hidden;
+  }
+  .certificates img {
+    margin-bottom: 55px;
+  }
+  .exp {
+    margin-bottom: 30px;
+  }
 }

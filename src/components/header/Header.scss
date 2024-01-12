@@ -1,6 +1,7 @@
 .page {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .header {
@@ -30,18 +31,17 @@
   overflow: hidden;
 }
 
-
 .nav-header li:hover {
   background-color: var(--color-nav);
 }
 
-.nav-header li a{
-    font-size: 16px;
-    transition: all .2s ease-in-out;
+.nav-header li a {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
-.nav-header li:hover a{
-    font-size: 17px; 
+.nav-header li:hover a {
+  font-size: 17px;
 }
 
 .nav-icon {
@@ -62,23 +62,118 @@
   border-radius: 50%;
   font-size: 22px;
   margin: 5px 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.header-container h4{
+.header-container h4 {
   cursor: pointer;
   font-size: 23px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .icon-header:hover,
-.header-container h4:hover{
+.header-container h4:hover {
   background: var(--gradient-text);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.icon-header:hover{
+.icon-header:hover {
   color: var(--color-nav);
   font-size: 24px;
+}
+
+.icon-toggle {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+@media screen and(max-width: 880px) {
+  .nav-header {
+    display: none;
+  }
+
+  .icon-toggle {
+    display: block;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -9999;
+    transform: translateX(100%);
+    transition: all .2s ease;
+  }
+
+  .nav-toggle.active {
+    z-index: 9999;
+    transform: translateX(0);
+  }
+
+  .toggle-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 246, 246, 0.888);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 30px;
+    padding-top: 10px;
+  }
+
+  .toggle-container .icon-toggle-time {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    color: var(--color-nav);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .toggle-container .icon-toggle-time:hover {
+    color: var(--color-subtext);
+  }
+
+  .nav-toggle-menu{
+    padding: 80px 0;
+    width: 100%;
+  }
+
+  .nav-toggle-menu li{
+    padding: 13px 10px;
+    color: var(--color-nav);
+    font-size: 17px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+
+  .nav-toggle-menu li:hover{
+    background-color: rgba(215, 212, 212, 0.877);
+  }
+}
+
+@media screen and(max-width: 680px) {
+  .nav-toggle {
+    width: 50%;
+  }
+}
+
+@media screen and(max-width: 480px) {
+  .nav-toggle {
+    width: 100%;
+  }
 }

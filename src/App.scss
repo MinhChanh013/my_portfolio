@@ -29,3 +29,27 @@
   filter: blur(564px);
 }
 
+#cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #ff8a71;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  display: block;
+}
+
+@media screen and (max-width: 1086px) {
+  .App-home{
+    padding: 0 50px;
+  }
+} 
+
+@media screen and (max-width: 680px) {
+  .App-home{
+    padding: 0 20px;
+  }
+} 
+

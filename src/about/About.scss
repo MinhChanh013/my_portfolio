@@ -210,3 +210,24 @@
   width: 150px;
   clip-path: circle(100%);
 }
+
+@media screen and (max-width: 680px) {
+  .avatar{
+    width: 180px;
+    height: 180px;
+  }
+  .about-img-cotainer{
+    height: 500px;
+  }
+  .img-skill{
+    width: 80px;
+  }
+  .img-skill img{
+    width: 95%;
+  }
+
+  .about-content-button button{
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}

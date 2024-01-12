@@ -1,0 +1,102 @@
+.contact {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.contact-left h2,
+.contact-right h2 {
+  font-size: 35px;
+  background: var(--gradient-text);
+  -webkit-text-fill-color: transparent;
+  transition: width 0.3s ease;
+  background-clip: text;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.contact-right label,
+.contact-left p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 200;
+  letter-spacing: 1.1px;
+}
+
+.contact-right div {
+  margin-top: 15px;
+}
+
+.contact-right div input {
+  outline: none;
+  border: 2px solid transparent;
+  height: 45px;
+  width: 80%;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 0 10px;
+  transition: all 0.2s ease;
+}
+
+.contact-right div input:hover,
+.contact-right div input:focus {
+  border-color: var(--color-nav);
+}
+
+.contact-right button {
+  margin-top: 40px;
+  height: 40px;
+  width: 80%;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--color-nav);
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  background-color: rgba(232, 232, 232, 0.174);
+  clip-path: circle(50% at 0 50%);
+  transition: all 0.3s ease;
+}
+
+.contact-right button:hover::before{
+    width: 100%;
+    clip-path: circle(100%);
+}
+
+@media screen and (max-width: 860px) {
+  .contact-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-right div input{
+    width: 100%;
+  }
+
+  .contact-right button{
+    width: 100%;
+  }
+}
