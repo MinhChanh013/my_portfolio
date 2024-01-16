@@ -73,7 +73,7 @@ const Project = () => {
                                     <img src={socket} alt="" className='img-project' />
                                     <img src={aws} alt="" className='img-project' />
                                 </div>
-                                <a href='https://minhchanh013.github.io/appchat_dev/'><button> Live Demo</button></a>
+                                <a href='https://appchat-dev-1v5z.vercel.app/'><button> Live Demo</button></a>
                             </div>
                             <div className="card-project-right">
                                 <video src={Appchat} loop autoPlay muted></video>
@@ -95,7 +95,7 @@ const Project = () => {
                                     <img src={react} alt="" className='img-project' />
                                     <img src={scss} alt="" className='img-project' />
                                 </div>
-                                <a href='https://discord-clone-404c2.web.app/'><button> Live Demo</button></a>
+                                <a href='https://minhchanh013.github.io/discord_clone/'><button> Live Demo</button></a>
                             </div>
                         </div>
                         <div className="card-project-container">

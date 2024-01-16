@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="contact-container">
                 <div className="contact-left">
                     <h2>Contact Info</h2>
-                    <p>Address: 283/32 Thien Ho Duong, Go Vap, Tp Ho Chi Minh</p>
+                    <p>Address: Go Vap, Tp Ho Chi Minh</p>
                     <p>Phone: 0703428823</p>
                     <p>Email: nguyenminhchanh1910@gmail.com</p>
                 </div>
