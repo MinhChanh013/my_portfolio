@@ -13,20 +13,16 @@ const Contact = () => {
                 </div>
                 <div className="contact-right">
                     <h2>Contact Form</h2>
-                    <form action="mailto:nguyenminhchanh1910@gmail.com">
+                    <form action="mailto:nguyenminhchanh1910@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8">
                         <div>
                             <label htmlFor="name">YourName</label> <br />
-                            <input type="text" id='name' placeholder='Enter your name' /> <br />
-                        </div>
-                        <div>
-                            <label htmlFor="email">Your email</label> <br />
-                            <input type="email" name="" id="email" placeholder='Enter your email' /> <br />
+                            <input type="text" id='name' name="name" placeholder='Enter your name' /> <br />
                         </div>
                         <div>
                             <label htmlFor="subject">Question</label> <br />
-                            <input type="text" id='subject' placeholder='Enter what you want to ask me' /> <br />
+                            <input type="text" id='subject' name="question" placeholder='Enter what you want to ask me' /> <br />
                         </div>
-                        <button type='submit'>Submit</button>
+                        <button type='submit' value="Send">Send</button>
                     </form>
                 </div>
             </div>
