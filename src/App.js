@@ -8,15 +8,26 @@ import Home from "./home/Home";
 import Exp from "./experience/Exp";
 import Project from "./project/Project";
 import Contact from "./contact/Contact";
+import axios from "axios";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const cursor = useRef(null);
   useEffect(() => {
+    axios
+      .post("https://note-api.adaptable.app/user/send-mail", {
+        email: "minhchanh1910@gmail.com",
+        subject: "Welcome to my portfolio",
+        body: "<p>Hello portfolio</p>",
+      })
+      .catch((err) => {
+        console.log("🚀 ~ send email ~ err:", err);
+      });
+
     setTimeout(() => {
       setLoading(false);
       handelCursor();
-    }, 4000);
+    }, 2500);
   }, []);
   const handelCursor = () => {
     window.onmousemove = function (e) {
