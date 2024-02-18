@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.855e29a8.css",
-    "main.js": "/my_portfolio/static/js/main.fe1c14a1.js",
+    "main.js": "/my_portfolio/static/js/main.64756251.js",
     "static/media/ai.png": "/my_portfolio/static/media/ai.aa60586ba1ba53762d94.png",
     "static/media/timisora.mp4": "/my_portfolio/static/media/timisora.83e5d7db2cd7295b61a1.mp4",
     "static/media/jpg": "/my_portfolio/static/media/21847a9315add6f38fbc.41e2e0ce3f4fbe79825f.jpg",
@@ -12,7 +12,7 @@
     "static/media/headphone.png": "/my_portfolio/static/media/headphone.2459bcb50f826302d4f7.png",
     "static/media/protfilo.png": "/my_portfolio/static/media/protfilo.4a9ae9b1500e481af617.png",
     "static/media/discord.png": "/my_portfolio/static/media/discord.327f12eed4359e735c37.png",
-    "static/media/CV.pdf": "/my_portfolio/static/media/CV.a62832b5260b5878dd01.pdf",
+    "static/media/CV.pdf": "/my_portfolio/static/media/CV.28991dfd132217c0554e.pdf",
     "static/media/aws-logo.png": "/my_portfolio/static/media/aws-logo.08dffd14eb0f47200a8c.png",
     "static/media/nextjs.webp": "/my_portfolio/static/media/nextjs.5aee6aaed820b4fd05f8.webp",
     "static/media/socket.png": "/my_portfolio/static/media/socket.2961c2ed574e8e7c1c5a.png",
@@ -32,10 +32,10 @@
     "static/media/html.svg": "/my_portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/firebase.svg": "/my_portfolio/static/media/firebase.06916b8648930adafd6620d700f0661d.svg",
     "main.855e29a8.css.map": "/my_portfolio/static/css/main.855e29a8.css.map",
-    "main.fe1c14a1.js.map": "/my_portfolio/static/js/main.fe1c14a1.js.map"
+    "main.64756251.js.map": "/my_portfolio/static/js/main.64756251.js.map"
   },
   "entrypoints": [
     "static/css/main.855e29a8.css",
-    "static/js/main.fe1c14a1.js"
+    "static/js/main.64756251.js"
   ]
 }
